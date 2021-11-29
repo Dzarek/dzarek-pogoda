@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 import Form from "./Form";
 import Result from "./Result";
-
+import Imieniny from "./Imieniny";
 //Klucz do API
 
 const APIKey = process.env.REACT_APP_API_KEY;
@@ -80,6 +80,9 @@ class App extends Component {
           <Result className="result" weather={this.state} />
           <div className="infoBar">
             <span>{this.state.dateClock.toLocaleString()}</span>
+          </div>
+          <div className="imieniny">
+            <Imieniny />
           </div>
         </div>
       </div>

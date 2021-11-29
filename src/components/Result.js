@@ -1,5 +1,7 @@
 import React from "react";
 import "./App.css";
+import { BsSunrise, BsSunset, BsWind, BsArrowDownUp } from "react-icons/bs";
+import { FaTemperatureLow } from "react-icons/fa";
 
 const Result = (props) => {
   const { city, sunrise, sunset, temp, pressure, wind, country, err } =
@@ -25,26 +27,31 @@ const Result = (props) => {
             Aktualna temperatura:
             <br />
             <span>{temp} &#176;C</span>
+            <FaTemperatureLow className="icon" />
           </h4>
         </div>
         <div className="weatherDetails">
           <div className="oneDetail">
             <h4>Wschód słońca:</h4>
             <span>{sunriseTime}</span>
+            <BsSunrise className="icon" />
           </div>
           <div className="oneDetail">
             <h4>Zachód słońca:</h4>
             <span>{sunsetTime}</span>
+            <BsSunset className="icon" />
           </div>
         </div>
         <div className="weatherDetails">
           <div className="oneDetail">
             <h4>Ciśnienie:</h4>
             <span>{pressure} hPa</span>
+            <BsArrowDownUp className="icon" />
           </div>
           <div className="oneDetail">
             <h4>Prędkość wiatru:</h4>
             <span>{wind} m/s</span>
+            <BsWind className="icon" />
           </div>
         </div>
       </div>
