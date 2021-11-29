@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Hammersmith One', sans-serif
+}
+
+
+.app-container {
+    background-image: url(images/ezgif.com-gif-maker.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+
+
+.App input {
+    padding: 15px 0px;
+    border: 2px solid rgb(121, 82, 11);
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 55%;
+    right: 14%;
+    transform: translateY(-50%);
+    text-align: center;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    outline: none;
+    width: 20vw;
+    font-family: 'Hammersmith One', sans-serif
+}
+
+
+
+
+input::placeholder {
+    color: rgb(170, 168, 168);
+    transition: 1s;
+    text-shadow: none;
+}
+
+.beforeContent {
+    color: whitesmoke;
+    font-size: 30px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-weight: 600;
+    animation: showHide 2s linear infinite;
+    overflow: hidden;
+}
+
+@keyframes showHide {
+    0% {
+        color: gray;
+        top: 0%;
+    }
+
+    100% {
+        color: whitesmoke;
+        top: 80%;
+    }
+}
+
+.result {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px solid rgb(3, 27, 66);
+    color: rgb(245, 245, 245);
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 45vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10vh 0;
+}
+
+.snow {
+    background-image: url(images/snow.gif);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sunny {
+    background-image: url(images/sunny.gif);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cloudy {
+    background-image: url(images/cloudy.gif);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.result h3 {
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 5vh;
+}
+
+h3 em {
+    color: rgb(121, 82, 11);
+    font-size: 3rem;
+    text-shadow: 0px 0px 4px #fff;
+}
+
+.weatherDetails {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 35vw;
+}
+
+.oneDetail {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    width: 40%;
+    margin: 1rem auto;
+    padding: 10px;
+}
+
+.oneDetail h4 {
+    font-size: 1.5rem;
+}
+
+.oneDetail span {
+    color: rgb(167, 120, 35);
+    margin-left: 5px;
+    text-shadow: 0 0 1px #000;
+    font-size: 2rem;
+}
+
+
+.infoBar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 7vh;
+    width: 15vw;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 0 10px;
+}
+
+.infoBar span {
+    background-color: rgb(121, 82, 11);
+    border-radius: 0 0 0 10px;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: rgb(233, 227, 227);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.temp {
+    text-align: center;
+    width: 60%;
+    margin: 10vh auto -5vh;
+}
+
+.temp h4 {
+    font-size: 1.5rem;
+}
+
+.temp span {
+    color: rgb(167, 120, 35);
+    margin-top: 2rem;
+    font-size: 2rem;
+    display: block;
+    animation: tempshock 1s infinite linear alternate;
+}
+
+@keyframes tempshock {
+    0% {
+        transform: scale(1.3);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+}
+
+
+
+@media(orientation: portrait) and (max-width: 800px) {
+    body {
+        overflow: hidden;
+    }
+
+    .App input {
+        width: 70vw;
+        height: 3vh;
+        top: 8%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 20px;
+        animation: none;
+    }
+
+    .beforeContent {
+        font-size: 18px;
+    }
+
+
+    .result {
+        padding: 0 10px;
+        border-radius: 10px 0 0 10px;
+        text-align: center;
+        position: relative;
+        top: 25vh;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100vw;
+        height: 75vh;
+        font-size: 16px;
+    }
+
+
+    .result h3 {
+        font-size: 20px;
+        margin-bottom: 2vh;
+    }
+
+    h3 em {
+        font-size: 2rem;
+    }
+
+    .weatherDetails {
+        width: 100vw;
+    }
+
+    .oneDetail {
+        width: 45%;
+        margin: .1rem auto;
+        padding: 10px;
+    }
+
+    .oneDetail h4 {
+        font-size: 1rem;
+    }
+
+    .oneDetail span {
+
+        font-size: 1.4rem;
+    }
+
+
+    .temp {
+        text-align: center;
+        width: 100%;
+        margin: 3vh auto -2vh;
+    }
+
+    .temp h4 {
+        font-size: 1rem;
+    }
+
+    .temp span {
+        margin-top: 1rem;
+        font-size: 1.2rem;
+        display: block;
+    }
+
+
+    .infoBar {
+        height: 4vh;
+        width: 100vw;
+        font-size: 15px;
+    }
+
+    .infoBar span {
+        height: 4vh;
+        width: 50vw;
+        border-radius: 0 0 5px 5px;
+        text-align: center;
+        color: rgb(233, 227, 227);
+    }
+
+}
+
+@media(orientation: landscape) and (max-width: 430px) {
+    .App input {
+        width: 90vw;
+        right: 50%;
+        transform: translateX(50%);
+        animation: none;
+    }
+
+    .result {
+        display: none;
+    }
+
+    .infoBar {
+        display: none;
+    }
+
+}
+
+@media(orientation: landscape) and (max-width: 900px) {
+    .App input {
+        top: 55%;
+        right: 9%;
+        transform: translateY(-50%);
+        font-size: 18px;
+        width: 30vw;
+        height: 5vh;
+    }
+
+    .beforeContent {
+        font-size: 18px;
+    }
+
+    .result h3 {
+        font-size: 16px;
+        margin-bottom: 1vh;
+    }
+
+    h3 em {
+        font-size: 1rem;
+    }
+
+    .result {
+        width: 50vw;
+    }
+
+    .weatherDetails {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 50vw;
+    }
+
+    .oneDetail {
+        width: 40%;
+        margin: 0rem auto;
+        padding: 5px;
+    }
+
+    .oneDetail h4 {
+        font-size: 1rem;
+    }
+
+    .oneDetail span {
+        font-size: 1rem;
+    }
+
+
+    .infoBar {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 10vh;
+        width: 30vw;
+        font-size: 16px;
+    }
+
+    .temp {
+        text-align: center;
+        width: 100%;
+        margin: 3vh auto -2vh;
+    }
+
+    .temp h4 {
+        font-size: 1rem;
+    }
+
+    .temp span {
+        margin-top: .2rem;
+        font-size: 1.2rem;
+        display: block;
+    }
+
+}
