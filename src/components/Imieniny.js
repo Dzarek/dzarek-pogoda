@@ -1,8 +1,8 @@
 import React from "react";
 
 const Imieniny = () => {
-  const imieniny = new Array();
-  imieniny[0] = new Array();
+  const imieniny = new Array([]);
+  imieniny[0] = new Array([]);
   imieniny[0][1] = "Maria, Mieczysław i Mieszko";
   imieniny[0][2] = "Grzegorz, Bazyli i Abel";
   imieniny[0][3] = "Danuta, Daniel i Piotr";
@@ -34,7 +34,7 @@ const Imieniny = () => {
   imieniny[0][29] = "Hanna, Walerian i Zdzisław";
   imieniny[0][30] = "Martyna, Maciej i Marcin";
   imieniny[0][31] = "Euzebiusz, Ludwik i Marceli";
-  imieniny[1] = new Array();
+  imieniny[1] = new Array([]);
   imieniny[1][1] = "Brygida, Ignacy i Seweryn";
   imieniny[1][2] = "Joanna, Katarzyna i Maria";
   imieniny[1][3] = "Błażej, Oskar i Stefan";
@@ -64,7 +64,7 @@ const Imieniny = () => {
   imieniny[1][27] = "Anastazja, Gabriel i Leonard";
   imieniny[1][28] = "Józef, Lech i Roman";
   imieniny[1][29] = "Dobronieg i Roman";
-  imieniny[2] = new Array();
+  imieniny[2] = new Array([]);
   imieniny[2][1] = "Aldona, Antoni i Radosław";
   imieniny[2][2] = "Franciszek, Lew i Michał";
   imieniny[2][3] = "Maryna, Hieronim i Tycjan";
@@ -96,7 +96,7 @@ const Imieniny = () => {
   imieniny[2][29] = "Cyryl, Eustachy i Wiktor";
   imieniny[2][30] = "Amelia, Aniela i Jan";
   imieniny[2][31] = "Balbina, Kornelia i Beniamin";
-  imieniny[3] = new Array();
+  imieniny[3] = new Array([]);
   imieniny[3][1] = "Grażyna, Katarzyna i Zbigniew";
   imieniny[3][2] = "Franciszek, Urban i Władysław";
   imieniny[3][3] = "Antoni, Jakub i Ryszard";
@@ -127,7 +127,7 @@ const Imieniny = () => {
   imieniny[3][28] = "Maria, Waleria i Paweł";
   imieniny[3][29] = "Rita, Hugo i Robert";
   imieniny[3][30] = "Lilla, Bartłomiej i Marian";
-  imieniny[4] = new Array();
+  imieniny[4] = new Array([]);
   imieniny[4][1] = "Filip, Jeremi i Józef";
   imieniny[4][2] = "Walenty, Walter i Zygmunt";
   imieniny[4][3] = "Maria, Mariola i Aleksander";
@@ -159,7 +159,7 @@ const Imieniny = () => {
   imieniny[4][29] = "Bogusława, Magdalena i Maksymilian";
   imieniny[4][30] = "Joanna, Ferdynand i Jan";
   imieniny[4][31] = "Aniela, Petronela i Feliks";
-  imieniny[5] = new Array();
+  imieniny[5] = new Array([]);
   imieniny[5][1] = "Jakub, Konrad i Nikodem";
   imieniny[5][2] = "Maria, Mikołaj i Piotr";
   imieniny[5][3] = "Karol, Leszek i Warzyniec";
@@ -190,7 +190,7 @@ const Imieniny = () => {
   imieniny[5][28] = "Ireneusz, Józe i Leon";
   imieniny[5][29] = "Iwetta, Paweł i Piotr";
   imieniny[5][30] = "Emilia, Lucyna i Cyryl";
-  imieniny[6] = new Array();
+  imieniny[6] = new Array([]);
   imieniny[6][1] = "Halina, Bogusław i Marian";
   imieniny[6][2] = "Jagoda, Maria i Otto";
   imieniny[6][3] = "Kornelia, Jacek i Mirosław";
@@ -222,7 +222,7 @@ const Imieniny = () => {
   imieniny[6][29] = "Maria, Marta i Olaf";
   imieniny[6][30] = "Julita, Maryna i Piotr";
   imieniny[6][31] = "Helena, Iga i Emilian";
-  imieniny[7] = new Array();
+  imieniny[7] = new Array([]);
   imieniny[7][1] = "Orchidea, Konrad i Piotr";
   imieniny[7][2] = "Eugeniusz, Gustaw i Stefan";
   imieniny[7][3] = "Lidia, August i Szczepan";
@@ -254,7 +254,7 @@ const Imieniny = () => {
   imieniny[7][29] = "Flora, Sabina i Jan";
   imieniny[7][30] = "Rebeka, Róża i Szczęsna";
   imieniny[7][31] = "Paulina, Bohdan i Rajmund";
-  imieniny[8] = new Array();
+  imieniny[8] = new Array([]);
   imieniny[8][1] = "August, Bronisław i Idzi";
   imieniny[8][2] = "Czesław, Dionizy i Henryk";
   imieniny[8][3] = "Antoni, Bartłomiej i Przesław";
@@ -285,7 +285,7 @@ const Imieniny = () => {
   imieniny[8][28] = "Jan, Marek i Wacław";
   imieniny[8][29] = "Gabriel, Michał i Rafał";
   imieniny[8][30] = "Zofia, Grzegorz i Wiktor";
-  imieniny[9] = new Array();
+  imieniny[9] = new Array([]);
   imieniny[9][1] = "Danuta, Teresa i Remigiusz";
   imieniny[9][2] = "Dionizja, Dionizy i Teofil";
   imieniny[9][3] = "Józefa, Eustachy i Jan";
@@ -317,7 +317,7 @@ const Imieniny = () => {
   imieniny[9][29] = "Euzebia, Longin i Zenobiusza";
   imieniny[9][30] = "Edmund, Klaudiusz i Przemysław";
   imieniny[9][31] = "Antoni, August i Łukasz";
-  imieniny[10] = new Array();
+  imieniny[10] = new Array([]);
   imieniny[10][1] = "Wiktoryna, Andrzej i Seweryn";
   imieniny[10][2] = "Małgorzata, Ambroży i Bożydar";
   imieniny[10][3] = "Sylwia, Cezary i Hubert";
@@ -348,7 +348,7 @@ const Imieniny = () => {
   imieniny[10][28] = "Jakub, Lesław i Zdzisław";
   imieniny[10][29] = "Błażej, Fryderyk i Walter";
   imieniny[10][30] = "Justyna, Andrzej i Konstanty";
-  imieniny[11] = new Array();
+  imieniny[11] = new Array([]);
   imieniny[11][1] = "Iwa, Natalia i Edmund";
   imieniny[11][2] = "Balbina, Paulina i Rafał";
   imieniny[11][3] = "Franciszek, Ksawery i Lucjusz";
@@ -381,7 +381,8 @@ const Imieniny = () => {
   imieniny[11][30] = "Katarzyna, Dionizy i Eugeniusz";
   imieniny[11][31] = "Sebastian, Mariusz i Sylwester";
   /* Tablica miesiace[] przechowuje polskie nazwy miesiecy */
-  const miesiace = new Array();
+
+  const miesiace = new Array([]);
   miesiace[0] = "Stycznia";
   miesiace[1] = "Lutego";
   miesiace[2] = "Marca";
@@ -394,6 +395,7 @@ const Imieniny = () => {
   miesiace[9] = "Pa&#65533;dziernika";
   miesiace[10] = "Listopada";
   miesiace[11] = "Grudnia";
+
   /* Funkcja pokaz() wyswietla liste dzis obchodzacych
   imieniny, wraz z aktualna informacja */
   function pokaz() {
